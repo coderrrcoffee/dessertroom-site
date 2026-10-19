@@ -1,0 +1,597 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Десертрум — торты, бенто и десерты в Йошкар-Оле</title>
+  <meta name="description" content="Торты, бенто, чизкейки, пирожные и наборы. Три кондитерские в Йошкар-Оле: Чавайна, 8, Советская, 128 и Чернякова, 3. Заказ в Telegram.">
+  <meta name="theme-color" content="#F7F0E7">
+  <meta name="format-detection" content="telephone=no">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:site_name" content="Десертрум">
+  <meta property="og:title" content="Десертрум — торты, бенто и десерты в Йошкар-Оле">
+  <meta property="og:description" content="Торты, бенто, чизкейки, пирожные и наборы. Три кондитерские в Йошкар-Оле: Чавайна, 8, Советская, 128 и Чернякова, 3. Заказ в Telegram.">
+  <meta property="og:image" content="https://coderrrcoffee.github.io/dessertroom-site/assets/photos/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Prata&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+  <link rel="icon" id="favicon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2064%2064%22%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20rx%3D%2216%22%20fill%3D%22%23F7F0E7%22%2F%3E%3Ctext%20x%3D%2232%22%20y%3D%2244%22%20font-family%3D%22Georgia%2Cserif%22%20font-size%3D%2236%22%20text-anchor%3D%22middle%22%20fill%3D%22%238F3D4D%22%3E%D0%94%3C%2Ftext%3E%3C%2Fsvg%3E">
+
+  <script src="config.js"></script>
+  <script>
+    /* Красим интерфейс до первой отрисовки — без вспышки чужой темы. */
+    (function () {
+      var c = window.SITE_CONFIG;
+      if (!c || !c.theme) return;
+      var r = document.documentElement;
+      Object.keys(c.theme).forEach(function (k) {
+        r.style.setProperty('--' + k.replace(/[A-Z]/g, function (m) { return '-' + m.toLowerCase(); }), c.theme[k]);
+      });
+    })();
+  </script>
+
+  <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "Bakery",
+  "name": "Десертрум",
+  "description": "Торты, бенто, чизкейки, пирожные и наборы. Три кондитерские в Йошкар-Оле: Чавайна, 8, Советская, 128 и Чернякова, 3. Заказ в Telegram.",
+  "telephone": "+79677550970",
+  "priceRange": "220–3 700 ₽",
+  "servesCuisine": "Десерты, торты, чизкейки",
+  "sameAs": [
+    "https://t.me/dessertroom12",
+    "https://t.me/dessertroommanager"
+  ],
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Йошкар-Ола",
+    "addressCountry": "RU"
+  },
+  "openingHours": "Mo-Su 09:00-23:00",
+  "department": [
+    {
+      "@type": "Bakery",
+      "name": "Десертрум — Чавайна, 8",
+      "telephone": "+79677550970",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "бульвар Чавайна, 8",
+        "addressLocality": "Йошкар-Ола",
+        "addressCountry": "RU"
+      }
+    },
+    {
+      "@type": "Bakery",
+      "name": "Десертрум — Советская, 128",
+      "telephone": "+79632397171",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "ул. Советская, 128",
+        "addressLocality": "Йошкар-Ола",
+        "addressCountry": "RU"
+      }
+    },
+    {
+      "@type": "Bakery",
+      "name": "Десертрум — Чернякова, 3",
+      "telephone": "+79053794313",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "ул. Чернякова, 3",
+        "addressLocality": "Йошкар-Ола",
+        "addressCountry": "RU"
+      }
+    }
+  ],
+  "url": "https://coderrrcoffee.github.io/dessertroom-site",
+  "image": "https://coderrrcoffee.github.io/dessertroom-site/assets/photos/og.jpg",
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Десерты",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "position": 1,
+        "price": 3700,
+        "priceCurrency": "RUB",
+        "availability": "https://schema.org/InStock",
+        "itemOffered": {
+          "@type": "Product",
+          "name": "Торт с малиной",
+          "description": "Бисквитный торт с малиной и нежным кремом. Декор и надпись согласуем под ваш повод.",
+          "image": "https://coderrrcoffee.github.io/dessertroom-site/assets/photos/cake-raspberry.webp"
+        }
+      },
+      {
+        "@type": "Offer",
+        "position": 2,
+        "price": 1500,
+        "priceCurrency": "RUB",
+        "availability": "https://schema.org/InStock",
+        "itemOffered": {
+          "@type": "Product",
+          "name": "Бенто с надписью",
+          "description": "Маленький торт с вашей надписью: бисквит, крем и декор. Заберёте с одной из трёх точек.",
+          "image": "https://coderrrcoffee.github.io/dessertroom-site/assets/photos/bento.webp"
+        }
+      },
+      {
+        "@type": "Offer",
+        "position": 3,
+        "price": 240,
+        "priceCurrency": "RUB",
+        "availability": "https://schema.org/InStock",
+        "itemOffered": {
+          "@type": "Product",
+          "name": "Чизкейк",
+          "description": "Песочная основа, сливочный чизкейк и ягодное покрытие. Вкусы меняются — уточняйте на витрине.",
+          "image": "https://coderrrcoffee.github.io/dessertroom-site/assets/photos/cheesecake.webp"
+        }
+      },
+      {
+        "@type": "Offer",
+        "position": 4,
+        "price": 240,
+        "priceCurrency": "RUB",
+        "availability": "https://schema.org/InStock",
+        "itemOffered": {
+          "@type": "Product",
+          "name": "Наполеон",
+          "description": "Слоёное тесто и заварной крем на белом шоколаде. Классика, которая всегда на витрине.",
+          "image": "https://coderrrcoffee.github.io/dessertroom-site/assets/photos/napoleon.webp"
+        }
+      },
+      {
+        "@type": "Offer",
+        "position": 5,
+        "price": 220,
+        "priceCurrency": "RUB",
+        "availability": "https://schema.org/InStock",
+        "itemOffered": {
+          "@type": "Product",
+          "name": "Медовик",
+          "description": "Медовые коржи, крем на карамелизированной сметане и карамель.",
+          "image": "https://coderrrcoffee.github.io/dessertroom-site/assets/photos/honey.webp"
+        }
+      },
+      {
+        "@type": "Offer",
+        "position": 6,
+        "price": 1000,
+        "priceCurrency": "RUB",
+        "availability": "https://schema.org/InStock",
+        "itemOffered": {
+          "@type": "Product",
+          "name": "Ассорти мини-пирожных",
+          "description": "Восемь мини-пирожных: медовое, лимонное, «Наполеон», шоколад-фундук, тирамису и другие.",
+          "image": "https://coderrrcoffee.github.io/dessertroom-site/assets/photos/mini-cakes.webp"
+        }
+      },
+      {
+        "@type": "Offer",
+        "position": 7,
+        "price": 550,
+        "priceCurrency": "RUB",
+        "availability": "https://schema.org/InStock",
+        "itemOffered": {
+          "@type": "Product",
+          "name": "Макаронс, 5 шт",
+          "description": "Пять миндальных пирожных с разными начинками. Красиво и удобно, если идёте в гости.",
+          "image": "https://coderrrcoffee.github.io/dessertroom-site/assets/photos/macarons.webp"
+        }
+      },
+      {
+        "@type": "Offer",
+        "position": 8,
+        "price": 400,
+        "priceCurrency": "RUB",
+        "availability": "https://schema.org/InStock",
+        "itemOffered": {
+          "@type": "Product",
+          "name": "Птичье молоко, 9 шт",
+          "description": "Девять конфет-суфле в ассортименте вкусов: клубника, какао, фисташка, манго, кокос.",
+          "image": "https://coderrrcoffee.github.io/dessertroom-site/assets/photos/bird-milk.webp"
+        }
+      },
+      {
+        "@type": "Offer",
+        "position": 9,
+        "price": 280,
+        "priceCurrency": "RUB",
+        "availability": "https://schema.org/InStock",
+        "itemOffered": {
+          "@type": "Product",
+          "name": "Вафля с ягодами",
+          "description": "Творожная вафля со свежими ягодами и бананом. Собираем после заказа.",
+          "image": "https://coderrrcoffee.github.io/dessertroom-site/assets/photos/waffle.webp"
+        }
+      }
+    ]
+  }
+}</script>
+</head>
+<body>
+  <a class="skip-link" href="#catalog">Перейти к витрине</a>
+
+  <header class="site-header" id="top">
+    <div class="wrap header-inner">
+      <a class="logo" href="#top" aria-label="Десертрум — на главную">
+        <span class="logo-line1" data-bind="brand.logoLine1">cheesecake</span>
+        <span class="logo-line2" data-bind="brand.logoLine2">kazan</span>
+      </a>
+
+      <nav class="nav" aria-label="Основная навигация">
+        <a href="#catalog">Витрина</a>
+        <a href="#how">Как заказать</a>
+        <a href="#order">Оформление</a>
+        <a href="#faq">Вопросы</a>
+      </nav>
+
+      <div class="header-actions">
+        <a class="header-phone js-phone-link" href="tel:+79677550970" data-bind="contacts.phoneDisplay">+7 917 222-56-54</a>
+        <a class="header-tg js-tg-link" href="https://t.me/dessertroommanager" target="_blank" rel="noopener" aria-label="Написать в Telegram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 3 3 10.5l5.5 2L10 19l3.5-4.5L19 17 21 3Z"/><path d="m8.5 12.5 6-4"/></svg>
+          <span>Telegram</span>
+        </a>
+        <button class="icon-btn" id="cartBtn" type="button" aria-label="Перейти к оформлению заказа">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 8h12l1.2 12H4.8L6 8Z"/><path d="M9 9V7a3 3 0 0 1 6 0v2"/></svg>
+          <span class="cart-count" data-cart-count hidden>0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ── Первый экран ────────────────────────────────────── -->
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow" data-bind="hero.eyebrow">Кондитерская · Казань</p>
+          <h1 data-bind-html="hero.titleHtml">Чизкейки и торты,<br>к которым не нужен <em>повод</em></h1>
+          <p class="hero-text" data-bind="hero.text">Более 30 видов десертов. Готовим день в день и привозим бесплатно по Казани.</p>
+
+          <div class="hero-actions">
+            <a class="btn btn--primary" href="#catalog">
+              <span data-bind="hero.primaryCta">Выбрать десерт</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h13"/><path d="m13 6 6 6-6 6"/></svg>
+            </a>
+            <a class="btn btn--ghost js-tg-link" href="https://t.me/dessertroommanager" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 3 3 10.5l5.5 2L10 19l3.5-4.5L19 17 21 3Z"/><path d="m8.5 12.5 6-4"/></svg>
+              <span data-bind="hero.secondaryCta">Написать в Telegram</span>
+            </a>
+          </div>
+
+          <div class="hero-stats" id="heroStats"></div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-frame">
+            <img data-bind-src="hero.image" data-bind-alt="hero.imageAlt" src="assets/photos/hero.webp" alt="Ассорти чизкейков" width="640" height="800" fetchpriority="high">
+          </div>
+
+          <div class="hero-sticker" aria-hidden="true">
+            <svg class="sticker-ring" viewBox="0 0 120 120">
+              <defs>
+                <path id="stickerPath" d="M60,60 m-43,0 a43,43 0 1,1 86,0 a43,43 0 1,1 -86,0"/>
+              </defs>
+              <text>
+                <textPath href="#stickerPath" startOffset="0" data-bind="hero.sticker">свежая выпечка · каждый день ·</textPath>
+              </text>
+            </svg>
+            <span class="sticker-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20h16"/><path d="M6 20v-7h12v7"/><path d="M8 13V9h8v4"/><path d="M12 9V5"/><path d="M12 5c0-1 .7-1.6 1.5-1.6"/></svg>
+            </span>
+          </div>
+
+          <div class="hero-badge">
+            <span class="hero-badge-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h11v10H3z"/><path d="M14 11h4l3 3v4h-7z"/><circle cx="7" cy="19" r="1.6"/><circle cx="17" cy="19" r="1.6"/></svg>
+            </span>
+            <span class="hero-badge-text">
+              <strong data-bind="hero.badgeTitle">Бесплатная доставка</strong>
+              <span data-bind="hero.badgeText">по Казани · день в день</span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track" id="marqueeTrack"></div>
+    </div>
+
+    <!-- ── Преимущества ────────────────────────────────────── -->
+    <section class="trust" aria-label="Почему мы">
+      <div class="wrap">
+        <div class="trust-grid" id="trustGrid"></div>
+      </div>
+    </section>
+
+    <!-- ── Витрина ─────────────────────────────────────────── -->
+    <section class="section catalog" id="catalog">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="section-head-copy">
+            <p class="eyebrow" data-bind="catalog.eyebrow">01 — Витрина</p>
+            <h2 class="section-title" data-bind="catalog.title">Выберите свой десерт</h2>
+            <p class="section-text" data-bind="catalog.text">Цены за десерт целиком или набор.</p>
+          </div>
+          <div class="filters" id="filters" role="group" aria-label="Категории десертов"></div>
+        </div>
+
+        <div class="catalog-grid" id="catalogGrid"></div>
+
+        <noscript>
+          <p class="catalog-noscript">Для выбора десертов включите JavaScript — или напишите нам в Telegram, и мы соберём заказ вручную.</p>
+        </noscript>
+
+        <p class="catalog-note">
+          <span data-bind="catalog.note">Не нашли свой вкус?</span>
+          <a class="js-tg-link" href="https://t.me/dessertroommanager" target="_blank" rel="noopener">
+            <span data-bind="catalog.noteLink">Напишите в Telegram — соберём под заказ</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h13"/><path d="m13 6 6 6-6 6"/></svg>
+          </a>
+        </p>
+      </div>
+    </section>
+
+    <!-- ── Как заказать ────────────────────────────────────── -->
+    <section class="how" id="how">
+      <div class="wrap">
+        <div class="how-head">
+          <div>
+            <p class="eyebrow eyebrow--light" data-bind="steps.eyebrow">02 — Как заказать</p>
+            <h2 class="section-title" data-bind="steps.title">Три шага до десерта</h2>
+          </div>
+          <p class="how-text" data-bind="steps.text">Выберите десерты, укажите детали — и отправьте готовый заказ в Telegram.</p>
+        </div>
+        <div class="how-grid" id="stepsGrid"></div>
+      </div>
+    </section>
+
+    <!-- ── Оформление ──────────────────────────────────────── -->
+    <section class="order-section" id="order">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="section-head-copy">
+            <p class="eyebrow" data-bind="order.eyebrow">03 — Оформление</p>
+            <h2 class="section-title" data-bind="order.title">Соберите заказ</h2>
+            <p class="section-text" data-bind="order.text">Заполните форму — сайт превратит её в готовое сообщение для Telegram.</p>
+          </div>
+        </div>
+
+        <div class="order-grid">
+          <div class="order-card">
+            <div class="order-card-head">
+              <h3 data-bind="order.summaryTitle">Ваш заказ</h3>
+              <span class="order-card-count" id="cartHeadCount"></span>
+            </div>
+
+            <div id="orderItems" aria-live="polite"></div>
+
+            <div class="form-title">
+              <h3 data-bind="order.formTitle">Данные для доставки</h3>
+            </div>
+
+            <form id="orderForm" novalidate autocomplete="on">
+              <div class="form-grid">
+                <div class="field" data-field="name">
+                  <label for="name">Ваше имя <span class="req">*</span></label>
+                  <input id="name" name="name" type="text" autocomplete="name" placeholder="Как к вам обращаться" maxlength="60">
+                  <span class="field-error" id="nameError"></span>
+                </div>
+
+                <div class="field" data-field="phone">
+                  <label for="phone">Телефон <span class="req">*</span></label>
+                  <input id="phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="+7 (___) ___-__-__" maxlength="18">
+                  <span class="field-error" id="phoneError"></span>
+                </div>
+
+                <div class="field field--full" data-field="occasion">
+                  <label for="occasion">Повод</label>
+                  <select id="occasion" name="occasion"></select>
+                </div>
+
+                <div class="field" data-field="date">
+                  <label for="date"><span data-bind="delivery.dateLabel">Дата доставки</span> <span class="req">*</span></label>
+                  <input id="date" name="date" type="date">
+                  <span class="field-error" id="dateError"></span>
+                </div>
+
+                <div class="field" data-field="time">
+                  <label for="time"><span data-bind="delivery.timeLabel">Удобное время</span> <span class="req">*</span></label>
+                  <select id="time" name="time"></select>
+                  <span class="field-hint" id="timeHint"></span>
+                  <span class="field-error" id="timeError"></span>
+                </div>
+
+                <div class="field field--full" data-field="method">
+                  <label><span data-bind="delivery.methodLabel">Способ получения</span> <span class="req">*</span></label>
+                  <div class="segmented" role="radiogroup" aria-label="Способ получения">
+                    <label>
+                      <input type="radio" name="method" value="delivery" checked>
+                      <span>Доставка</span>
+                    </label>
+                    <label>
+                      <input type="radio" name="method" value="pickup">
+                      <span>Самовывоз</span>
+                    </label>
+                  </div>
+                  <span class="field-hint" id="pickupHint" hidden></span>
+                </div>
+
+                <div class="field field--full" data-field="pickupLocation" id="pickupLocationField" hidden>
+                  <label for="pickupLocation"><span data-bind="delivery.pickupLocationLabel">Точка самовывоза</span> <span class="req">*</span></label>
+                  <select id="pickupLocation" name="pickupLocation"></select>
+                  <span class="field-error" id="pickupLocationError"></span>
+                </div>
+
+                <div class="field field--full" data-field="address" id="addressField">
+                  <label for="address">Адрес доставки <span class="req">*</span></label>
+                  <input id="address" name="address" type="text" autocomplete="street-address" placeholder="Улица, дом, квартира" maxlength="160">
+                  <span class="field-error" id="addressError"></span>
+                </div>
+
+                <div class="field field--full" data-field="inscription" id="inscriptionField">
+                  <label for="inscription">Надпись на торте <span class="optional">— необязательно</span></label>
+                  <input id="inscription" name="inscription" type="text" placeholder="Например: «С днём рождения, Аня!»" maxlength="80">
+                </div>
+
+                <div class="field field--full" data-field="comment">
+                  <label for="comment">Комментарий <span class="optional">— необязательно</span></label>
+                  <textarea id="comment" name="comment" rows="3" placeholder="Получатель, пожелания, сюрприз — всё, что важно знать" maxlength="500"></textarea>
+                </div>
+              </div>
+
+              <div class="consent-wrap" data-field="consent">
+                <label class="consent">
+                  <input type="checkbox" id="consent" name="consent">
+                  <span><span data-bind="order.consent">Согласен на обработку персональных данных</span> · <a href="privacy.html" target="_blank" rel="noopener">политика</a></span>
+                </label>
+                <span class="field-error" id="consentError"></span>
+              </div>
+
+              <p class="form-note">Данные никуда не отправляются, пока вы сами не откроете Telegram.</p>
+              <button type="submit" class="sr-only">Оформить заказ</button>
+            </form>
+          </div>
+
+          <aside class="summary" id="summary" aria-label="Итог заказа">
+            <div class="summary-head">
+              <div>
+                <h3 data-bind="order.summaryTitle">Ваш заказ</h3>
+                <p class="summary-count" id="summaryCount"></p>
+              </div>
+              <span class="summary-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8h12l1.2 12H4.8L6 8Z"/><path d="M9 9V7a3 3 0 0 1 6 0v2"/></svg>
+              </span>
+            </div>
+
+            <div class="summary-list" id="summaryList"></div>
+
+            <div class="summary-totals">
+              <div class="summary-row"><span>Вес</span><b id="summaryWeight">—</b></div>
+              <div class="summary-row"><span data-bind="delivery.summaryLabel">Доставка</span><b id="summaryDelivery">—</b></div>
+              <div class="summary-total">
+                <span>Итого</span>
+                <strong id="summaryTotal">0 ₽</strong>
+              </div>
+            </div>
+
+            <button class="btn btn--light" id="checkoutBtn" type="button">
+              <span data-bind="order.submit">Оформить в Telegram</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h13"/><path d="m13 6 6 6-6 6"/></svg>
+            </button>
+            <p class="summary-note" data-bind="order.submitNote">Откроется чат с продавцом, текст заказа уже будет вставлен.</p>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── FAQ ─────────────────────────────────────────────── -->
+    <section class="section faq" id="faq">
+      <div class="wrap faq-grid">
+        <div class="faq-copy">
+          <p class="eyebrow" data-bind="faq.eyebrow">04 — Вопросы</p>
+          <h2 class="section-title" data-bind="faq.title">Коротко о важном</h2>
+          <p class="section-text" data-bind="faq.text">Не нашли ответ? Напишите в Telegram — отвечаем моментально.</p>
+          <a class="btn btn--ghost js-tg-link" href="https://t.me/dessertroommanager" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 3 3 10.5l5.5 2L10 19l3.5-4.5L19 17 21 3Z"/><path d="m8.5 12.5 6-4"/></svg>
+            <span>Задать вопрос</span>
+          </a>
+        </div>
+        <div class="faq-list" id="faqList"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="contacts">
+    <div class="wrap">
+      <div class="footer-top">
+        <div>
+          <a class="logo logo--footer" href="#top" aria-label="Десертрум — наверх">
+            <span class="logo-line1" data-bind="brand.logoLine1">cheesecake</span>
+            <span class="logo-line2" data-bind="brand.logoLine2">kazan</span>
+          </a>
+          <p class="footer-note" data-bind="footer.note">Десерты, которые не нужно искать повода.</p>
+          <p class="footer-city"><span data-bind="brand.city">Казань</span> · <span data-bind="delivery.hours">8:00–20:00</span>, <span data-bind="delivery.days">каждый день</span></p>
+        </div>
+
+        <div>
+          <h4>Контакты</h4>
+          <div class="footer-links">
+            <a class="js-phone-link" href="tel:+79677550970" data-bind="contacts.phoneDisplay">+7 917 222-56-54</a>
+            <a class="js-tg-link" href="https://t.me/dessertroommanager" target="_blank" rel="noopener">Telegram для заказов</a>
+            <a class="js-channel-link" href="https://t.me/dessertroom12" target="_blank" rel="noopener" data-bind="contacts.telegramChannelLabel">@cheesecakekazan</a>
+          </div>
+        </div>
+
+        <div>
+          <h4>Информация</h4>
+          <div class="footer-links">
+            <a href="#catalog">Витрина</a>
+            <a href="#how">Как заказать</a>
+            <a href="#faq">Вопросы и доставка</a>
+            <a href="privacy.html">Политика конфиденциальности</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© <span id="year"></span> <span data-bind="brand.name">Cheesecake Kazan</span></span>
+        <span data-bind="footer.credit"></span>
+      </div>
+
+      <div class="footer-watermark" aria-hidden="true" data-bind="brand.logoLine1">cheesecake</div>
+    </div>
+  </footer>
+
+  <div class="mobile-bar" id="mobileBar" aria-hidden="true">
+    <div>
+      <div class="mobile-bar-meta" id="mobileBarMeta">0 десертов</div>
+      <div class="mobile-bar-total" id="mobileBarTotal">0 ₽</div>
+    </div>
+    <button class="btn" id="mobileBarBtn" type="button">
+      Оформить
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h13"/><path d="m13 6 6 6-6 6"/></svg>
+    </button>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <dialog class="modal" id="orderModal" aria-labelledby="modalTitle">
+    <div class="modal-card">
+      <button class="modal-close" id="modalClose" type="button" aria-label="Закрыть">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+      </button>
+
+      <div class="modal-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 4.5 4.5L19 7"/></svg>
+      </div>
+
+      <h2 id="modalTitle">Заказ собран</h2>
+      <p>Осталось отправить его в Telegram — текст уже готов.</p>
+
+      <pre id="orderText"></pre>
+
+      <div class="modal-actions">
+        <a class="btn btn--primary" id="tgSend" href="#" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 3 3 10.5l5.5 2L10 19l3.5-4.5L19 17 21 3Z"/><path d="m8.5 12.5 6-4"/></svg>
+          Открыть Telegram
+        </a>
+        <button class="btn btn--ghost" id="copyBtn" type="button">Скопировать текст</button>
+      </div>
+
+      <p class="modal-hint">Если Telegram не открылся, скопируйте текст и вставьте его в чат вручную.</p>
+    </div>
+  </dialog>
+
+  <script type="application/json" id="catalogFallback">{"products":[{"id":"cake-raspberry","name":"Торт с малиной","desc":"Бисквитный торт с малиной и нежным кремом. Декор и надпись согласуем под ваш повод.","price":3700,"weight":1900,"weightLabel":"1,9 кг","unit":"шт","category":"cakes","image":"assets/photos/cake-raspberry.webp","badge":"Под заказ","badgeTone":"green","available":true},{"id":"bento","name":"Бенто с надписью","desc":"Маленький торт с вашей надписью: бисквит, крем и декор. Заберёте с одной из трёх точек.","price":1500,"weight":400,"weightLabel":"400 г","unit":"шт","category":"bento","image":"assets/photos/bento.webp","badge":"Хит","badgeTone":"accent","available":true},{"id":"cheesecake","name":"Чизкейк","desc":"Песочная основа, сливочный чизкейк и ягодное покрытие. Вкусы меняются — уточняйте на витрине.","price":240,"weight":170,"weightLabel":"170 г","unit":"шт","category":"desserts","image":"assets/photos/cheesecake.webp","badge":"","badgeTone":"accent","available":true},{"id":"napoleon","name":"Наполеон","desc":"Слоёное тесто и заварной крем на белом шоколаде. Классика, которая всегда на витрине.","price":240,"weight":160,"weightLabel":"160 г","unit":"шт","category":"desserts","image":"assets/photos/napoleon.webp","badge":"","badgeTone":"accent","available":true},{"id":"honey","name":"Медовик","desc":"Медовые коржи, крем на карамелизированной сметане и карамель.","price":220,"weight":130,"weightLabel":"130 г","unit":"шт","category":"desserts","image":"assets/photos/honey.webp","badge":"","badgeTone":"accent","available":true},{"id":"mini-cakes","name":"Ассорти мини-пирожных","desc":"Восемь мини-пирожных: медовое, лимонное, «Наполеон», шоколад-фундук, тирамису и другие.","price":1000,"weight":500,"weightLabel":"8 шт · 500 г","unit":"набор","category":"sets","image":"assets/photos/mini-cakes.webp","badge":"Для гостей","badgeTone":"green","available":true},{"id":"macarons","name":"Макаронс, 5 шт","desc":"Пять миндальных пирожных с разными начинками. Красиво и удобно, если идёте в гости.","price":550,"weight":150,"weightLabel":"5 шт · 150 г","unit":"набор","category":"sets","image":"assets/photos/macarons.webp","badge":"","badgeTone":"accent","available":true},{"id":"bird-milk","name":"Птичье молоко, 9 шт","desc":"Девять конфет-суфле в ассортименте вкусов: клубника, какао, фисташка, манго, кокос.","price":400,"weight":170,"weightLabel":"9 шт · 170 г","unit":"набор","category":"sets","image":"assets/photos/bird-milk.webp","badge":"","badgeTone":"accent","available":true},{"id":"waffle","name":"Вафля с ягодами","desc":"Творожная вафля со свежими ягодами и бананом. Собираем после заказа.","price":280,"weight":240,"weightLabel":"240 г","unit":"шт","category":"pastry","image":"assets/photos/waffle.webp","badge":"","badgeTone":"accent","available":true}]}</script>
+  <script src="assets/app.js"></script>
+</body>
+</html>
